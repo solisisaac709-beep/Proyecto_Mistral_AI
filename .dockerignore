@@ -1,0 +1,23 @@
+
+# Entorno virtual
+.venv/
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+
+# Evidencias y resultados locales
+docs/
+results/
+
+# Archivos de Git
+.git/
+.gitignore
+
+# Archivos de configuracion local
+.env
+.vscode/
+
+# Modelos grandes
+*.gguf
+*.safetensors

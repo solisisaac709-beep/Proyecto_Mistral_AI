@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "categoria": "generacion",
+    "prompt": "Redacta un correo formal dirigido a un profesor universitario para solicitar una prorroga de entrega. Incluye tres ideas: dificultad tecnica, avance del proyecto y compromiso de entrega."
+  },
+  {
+    "id": 2,
+    "categoria": "generacion",
+    "prompt": "Redacta una descripcion breve de una aplicacion de inteligencia artificial para mejorar la atencion al cliente en una empresa costarricense."
+  },
+  {
+    "id": 3,
+    "categoria": "resumen",
+    "prompt": "Resume en tres viñetas el siguiente texto, destacando aplicaciones, beneficios y riesgos: La inteligencia artificial es una tecnología que permite desarrollar sistemas capaces de procesar información, identificar patrones y generar respuestas a partir de datos. Durante los últimos años, su utilización ha aumentado en distintos sectores debido a los avances en capacidad de procesamiento y disponibilidad de información. En medicina, la inteligencia artificial apoya el análisis de imágenes, ayuda a identificar posibles enfermedades y facilita la organización de información clínica. Estas herramientas pueden colaborar con los profesionales, pero no sustituyen la valoración médica ni la responsabilidad humana. En educación, algunas aplicaciones adaptan materiales de aprendizaje a las necesidades de los estudiantes, proporcionan explicaciones y apoyan la preparación de actividades académicas. Sin embargo, también es necesario promover el pensamiento crítico para evitar una dependencia excesiva de estas herramientas. En la industria, los sistemas inteligentes ayudan a supervisar procesos de producción, detectar fallas en equipos y analizar indicadores de rendimiento. Algunas empresas utilizan algoritmos para organizar inventarios, pronosticar la demanda y reducir desperdicios. En el comercio, la inteligencia artificial permite analizar preferencias de consumidores, recomendar productos y mejorar la atención al cliente mediante asistentes virtuales. Estas aplicaciones pueden contribuir a reducir tiempos de espera y mejorar la productividad. A pesar de sus beneficios, su implementación presenta desafíos importantes. Uno es la privacidad de los datos, porque algunos sistemas procesan información personal que debe protegerse adecuadamente. Otro desafío corresponde a los sesgos algorítmicos, que pueden provocar resultados injustos cuando los datos utilizados para entrenar los modelos no representan correctamente a toda la población. La transparencia también es fundamental, porque las personas necesitan comprender las limitaciones de los sistemas que utilizan. Además, las organizaciones deben considerar costos de implementación, consumo de recursos tecnológicos y capacitación de sus trabajadores. La automatización puede transformar ciertas actividades laborales, por lo que resulta importante preparar al personal para asumir nuevas responsabilidades. En Costa Rica, la inteligencia artificial podría apoyar procesos de instituciones públicas, empresas de servicios y organizaciones productivas. Por ejemplo, podría facilitar la gestión de consultas ciudadanas, la organización de documentos y el análisis de información administrativa. No obstante, cualquier implementación debe considerar seguridad de datos, supervisión humana y cumplimiento de las normas correspondientes. El uso responsable de esta tecnología requiere evaluar resultados y establecer mecanismos para corregir errores. También es importante reconocer que una respuesta generada automáticamente no siempre es correcta, aunque esté redactada de manera convincente. Por esa razón, las organizaciones deben verificar la información antes de tomar decisiones importantes. Asimismo, es recomendable definir objetivos medibles antes de incorporar herramientas inteligentes y comparar los resultados obtenidos con los procedimientos anteriores. Una evaluación adecuada debería considerar no solamente la rapidez de las respuestas, sino también su exactitud, utilidad, consistencia y accesibilidad para diferentes usuarios. Finalmente, la participación de especialistas y personas afectadas permite identificar riesgos que podrían pasar inadvertidos durante el diseño. En conclusión, la inteligencia artificial ofrece oportunidades para mejorar la eficiencia y desarrollar nuevas soluciones, pero su aplicación debe acompañarse de principios éticos, controles adecuados y participación humana. Estas decisiones requieren seguimiento continuo y evaluación responsable."
+  },
+  {
+    "id": 4,
+    "categoria": "resumen",
+    "prompt": "Resume en dos oraciones el siguiente texto, mencionando sus aplicaciones y ventajas principales: Python es un lenguaje de programación de alto nivel que se utiliza en diferentes áreas de la informática. Una de sus principales características es que posee una sintaxis relativamente sencilla, lo que facilita la lectura y comprensión del código. Por esta razón, suele utilizarse en cursos universitarios y programas de formación para personas que comienzan a aprender programación. Generalmente, Python permite desarrollar soluciones mediante instrucciones claras y organizadas. Esto no significa que todos los problemas sean fáciles de resolver, sino que el lenguaje ofrece herramientas que simplifican algunas tareas. En desarrollo de software, Python se utiliza para crear aplicaciones, automatizar procesos y construir servicios que se comunican mediante interfaces de programación. También es frecuente su utilización en análisis de datos, donde permite organizar información, realizar cálculos y representar resultados mediante gráficos. Existen bibliotecas especializadas que facilitan estas actividades y ayudan a reducir la cantidad de código que debe escribir el programador. En inteligencia artificial, Python es ampliamente utilizado para desarrollar aplicaciones que trabajan con modelos de aprendizaje automático y procesamiento del lenguaje natural. Las bibliotecas disponibles permiten preparar datos, realizar pruebas y conectar programas con servicios tecnológicos. Un ejemplo es la comunicación entre una aplicación Python y un modelo de lenguaje ejecutado localmente mediante Ollama. En este caso, el programa puede enviar preguntas, recibir respuestas y almacenar resultados para su posterior análisis. Otra aplicación importante corresponde a la automatización de tareas repetitivas. Mediante scripts, los usuarios pueden organizar archivos, procesar documentos y generar reportes sin realizar manualmente cada operación. En desarrollo web, Python también permite implementar funcionalidades del servidor, gestionar información y construir servicios para diferentes aplicaciones. Entre sus ventajas se encuentra la disponibilidad de documentación, recursos educativos y una comunidad de desarrolladores que comparte conocimientos. Sin embargo, aprender Python requiere comprender conceptos como variables, estructuras de control, funciones, archivos y manejo de errores. También es necesario aplicar buenas prácticas para mantener el código organizado y facilitar su mantenimiento. La utilización de entornos virtuales permite administrar las bibliotecas necesarias para cada proyecto y reducir conflictos entre versiones. En proyectos universitarios, estas herramientas resultan útiles porque facilitan la reproducción de experimentos y la organización de archivos. Por otra parte, Python no siempre es la mejor opción para todas las aplicaciones, especialmente cuando existen requisitos específicos de rendimiento o integración con determinados sistemas. La elección de un lenguaje debe considerar las necesidades del proyecto, los recursos disponibles y la experiencia del equipo de desarrollo. También conviene escribir pruebas automáticas que permitan comprobar el funcionamiento de las funciones después de cada cambio. Los comentarios y la documentación ayudan a explicar decisiones importantes, pero no reemplazan nombres claros ni una estructura comprensible. Cuando se trabaja con datos personales, el programador debe proteger las credenciales y evitar compartir información sensible en repositorios públicos. En conclusión, Python es una herramienta versátil que permite desarrollar soluciones en automatización, análisis de datos, inteligencia artificial y desarrollo web. Su facilidad de lectura, sus bibliotecas y su comunidad lo convierten en una alternativa útil tanto para estudiantes como para profesionales."
+  },
+  {
+    "id": 5,
+    "categoria": "correccion_traduccion",
+    "prompt": "Corrige la ortografia y gramatica de esta oracion sin cambiar su significado: La intelijencia artificial esta cambiando la manera en que las empresas prosesan la informacion."
+  },
+  {
+    "id": 6,
+    "categoria": "correccion_traduccion",
+    "prompt": "Traduce al ingles la siguiente oracion: La inteligencia artificial puede ayudar a mejorar los procesos de produccion en las empresas."
+  },
+  {
+    "id": 7,
+    "categoria": "codigo",
+    "prompt": "Escribe una funcion sencilla en Python que reciba dos numeros y devuelva su suma. Incluye un ejemplo de uso."
+  },
+  {
+    "id": 8,
+    "categoria": "codigo",
+    "prompt": "Genera una consulta SQL Server que muestre el nombre y salario de los empleados cuyo salario sea mayor a 500000, ordenados de mayor a menor. Supone una tabla Empleados con columnas Nombre y Salario."
+  },
+  {
+    "id": 9,
+    "categoria": "razonamiento_veracidad",
+    "prompt": "Un estudiante tiene 5 cursos y obtiene las notas 80, 90, 75, 85 y 70. Calcula el promedio y explica el procedimiento."
+  },
+  {
+    "id": 10,
+    "categoria": "razonamiento_veracidad",
+    "prompt": "Cual es la capital de Costa Rica y en que año se fundo la Universidad de Costa Rica? Responde de forma breve."
+  }
+]

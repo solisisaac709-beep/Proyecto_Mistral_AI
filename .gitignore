@@ -1,0 +1,29 @@
+
+# Entorno virtual de Python
+.venv/
+venv/
+
+# Archivos temporales
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Configuracion local
+.env
+.env.*
+.vscode/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Modelos de IA
+*.gguf
+*.safetensors
+
+# Resultados de ejecucion
+results/*.csv
+results/*.json
+
+# Mantener la carpeta results
+!results/.gitkeep
