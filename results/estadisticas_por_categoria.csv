@@ -1,0 +1,6 @@
+﻿"Categoria","Preguntas","Tokens_Promedio","TTFT_Promedio","Velocidad_Promedio","Tiempo_Promedio"
+"generacion","2","500","7.2296","24.3742","27.7484"
+"resumen","2","314","5.8988","24.0356","19.0129"
+"correccion_traduccion","2","53","2.2532","25.1778","4.3886"
+"codigo","2","148","2.2352","24.5108","8.2762"
+"razonamiento_veracidad","2","120","2.2145","24.8592","7.0931"
