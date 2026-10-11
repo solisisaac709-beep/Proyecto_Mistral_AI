@@ -98,3 +98,130 @@ crear_grafico(
 )
 
 print("\nLos tres graficos se generaron correctamente.")
+
+
+# ------------------------------------------------------------
+# Comparacion de rendimiento entre Windows y Docker
+# Se utilizan tres ejecuciones completas por configuracion.
+# ------------------------------------------------------------
+
+import json
+import statistics
+
+archivos_pruebas = {
+    "Windows": [
+        "resultados_20261011_151650_913926.json",
+        "resultados_20261011_152651_308671.json",
+        "resultados_20261011_153006_320986.json"
+    ],
+    "Docker": [
+        "resultados_20261011_220322_432084.json",
+        "resultados_20261011_220533_422600.json",
+        "resultados_20261011_220859_524549.json"
+    ]
+}
+
+# Cargamos las 30 respuestas de cada configuracion.
+resultados_comparacion = {}
+
+for configuracion, archivos in archivos_pruebas.items():
+    respuestas = []
+
+    for nombre_archivo in archivos:
+        ruta = BASE / "results" / nombre_archivo
+
+        with open(ruta, "r", encoding="utf-8") as archivo:
+            contenido = json.load(archivo)
+
+        if isinstance(contenido, dict):
+            contenido = [contenido]
+
+        respuestas.extend(contenido)
+
+    resultados_comparacion[configuracion] = respuestas
+    print(configuracion, ":", len(respuestas), "respuestas")
+
+
+# Funcion para crear graficos comparativos.
+def grafico_comparativo(campo, titulo, unidad, archivo_salida):
+    configuraciones = ["Windows", "Docker"]
+
+    promedios = []
+    desviaciones = []
+
+    for configuracion in configuraciones:
+        valores = [
+            float(respuesta[campo])
+            for respuesta in resultados_comparacion[configuracion]
+        ]
+
+        promedios.append(statistics.mean(valores))
+        desviaciones.append(statistics.stdev(valores))
+
+    plt.figure(figsize=(8, 5))
+
+    barras = plt.bar(
+        configuraciones,
+        promedios,
+        yerr=desviaciones,
+        capsize=6,
+        color=["#2874A6", "#239B56"],
+        width=0.55
+    )
+
+    plt.title(titulo, fontsize=14, fontweight="bold")
+    plt.ylabel(unidad)
+    plt.grid(axis="y", alpha=0.25)
+
+    for barra, promedio in zip(barras, promedios):
+        plt.annotate(
+            f"{promedio:.2f}",
+            (barra.get_x() + barra.get_width() / 2, promedio),
+            xytext=(0, 10),
+            textcoords="offset points",
+            ha="center"
+        )
+
+    plt.ylim(bottom=0)
+    plt.tight_layout()
+
+    ruta = CARPETA_GRAFICOS / archivo_salida
+    plt.savefig(ruta, dpi=300, bbox_inches="tight")
+    plt.close()
+
+    print("Grafico comparativo guardado:", ruta)
+
+
+# Grafico 4: comparacion de TTFT.
+grafico_comparativo(
+    "ttft_segundos",
+    "TTFT promedio: Windows vs Docker",
+    "Segundos",
+    "04_comparacion_ttft.png"
+)
+
+# Grafico 5: comparacion de velocidad.
+grafico_comparativo(
+    "tokens_por_segundo",
+    "Velocidad de generacion: Windows vs Docker",
+    "Tokens por segundo",
+    "05_comparacion_velocidad.png"
+)
+
+# Grafico 6: comparacion del tiempo total.
+grafico_comparativo(
+    "tiempo_total",
+    "Tiempo total: Windows vs Docker",
+    "Segundos",
+    "06_comparacion_tiempo_total.png"
+)
+
+# Grafico 7: comparacion de tokens.
+grafico_comparativo(
+    "tokens",
+    "Tokens generados: Windows vs Docker",
+    "Cantidad de tokens",
+    "07_comparacion_tokens.png"
+)
+
+print("\nLos cuatro graficos comparativos se generaron correctamente.")
