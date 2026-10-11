@@ -142,7 +142,8 @@ for configuracion, archivos in archivos_pruebas.items():
     print(configuracion, ":", len(respuestas), "respuestas")
 
 
-# Funcion para crear graficos comparativos.
+
+# Funcion para crear graficos comparativos mas claros.
 def grafico_comparativo(campo, titulo, unidad, archivo_salida):
     configuraciones = ["Windows", "Docker"]
 
@@ -158,36 +159,59 @@ def grafico_comparativo(campo, titulo, unidad, archivo_salida):
         promedios.append(statistics.mean(valores))
         desviaciones.append(statistics.stdev(valores))
 
-    plt.figure(figsize=(8, 5))
+    fig, ax = plt.subplots(figsize=(9, 5.5))
 
-    barras = plt.bar(
+    colores = ["#2874A6", "#239B56"]
+
+    barras = ax.bar(
         configuraciones,
         promedios,
-        yerr=desviaciones,
-        capsize=6,
-        color=["#2874A6", "#239B56"],
-        width=0.55
+        color=colores,
+        width=0.48
     )
 
-    plt.title(titulo, fontsize=14, fontweight="bold")
-    plt.ylabel(unidad)
-    plt.grid(axis="y", alpha=0.25)
+    ax.set_title(titulo, fontsize=15, fontweight="bold", pad=18)
+    ax.set_ylabel(unidad, fontsize=11)
+    ax.grid(axis="y", alpha=0.2)
+    ax.set_axisbelow(True)
 
+    # Mostramos el promedio encima de cada barra.
     for barra, promedio in zip(barras, promedios):
-        plt.annotate(
+        ax.annotate(
             f"{promedio:.2f}",
-            (barra.get_x() + barra.get_width() / 2, promedio),
-            xytext=(0, 10),
+            xy=(
+                barra.get_x() + barra.get_width() / 2,
+                promedio
+            ),
+            xytext=(0, 8),
             textcoords="offset points",
-            ha="center"
+            ha="center",
+            fontsize=12,
+            fontweight="bold"
         )
 
-    plt.ylim(bottom=0)
-    plt.tight_layout()
+    # Dejamos espacio para los valores superiores.
+    ax.set_ylim(0, max(promedios) * 1.25)
+
+    # La desviacion estandar se muestra debajo del grafico.
+    informacion = (
+        f"Windows: desviacion estandar = {desviaciones[0]:.2f}   |   "
+        f"Docker: desviacion estandar = {desviaciones[1]:.2f}"
+    )
+
+    fig.text(
+        0.5, 0.02,
+        informacion,
+        ha="center",
+        fontsize=9,
+        color="#555555"
+    )
+
+    fig.subplots_adjust(bottom=0.17, top=0.87)
 
     ruta = CARPETA_GRAFICOS / archivo_salida
-    plt.savefig(ruta, dpi=300, bbox_inches="tight")
-    plt.close()
+    fig.savefig(ruta, dpi=300, bbox_inches="tight")
+    plt.close(fig)
 
     print("Grafico comparativo guardado:", ruta)
 
