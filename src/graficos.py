@@ -513,3 +513,116 @@ grafico_temperaturas(
 )
 
 print("\nTotal esperado: 15 graficos.")
+
+
+# ------------------------------------------------------------
+# Graficos 16 y 17: evaluacion de calidad de las respuestas
+# Comparacion entre temperaturas 0.2 y 0.9
+# ------------------------------------------------------------
+
+ARCHIVO_CALIDAD = BASE / "results" / "evaluacion_calidad_revisada.csv"
+
+calidad = pd.read_csv(ARCHIVO_CALIDAD, encoding="utf-8-sig")
+
+# Convertimos las temperaturas a numeros para evitar diferencias
+# entre valores como 0.2 y "0.2".
+calidad["Temperatura"] = pd.to_numeric(calidad["Temperatura"])
+
+criterios = [
+    "Precision_1_5",
+    "Claridad_1_5",
+    "Cumplimiento_1_5",
+    "Coherencia_1_5"
+]
+
+# Calculamos los promedios directamente desde las calificaciones.
+for criterio in criterios:
+    calidad[criterio] = pd.to_numeric(
+        calidad[criterio],
+        errors="raise"
+    )
+
+promedios_calidad = (
+    calidad.groupby("Temperatura")[criterios]
+    .mean()
+    .reindex([0.2, 0.9])
+)
+
+if promedios_calidad.isna().any().any():
+    raise ValueError("Faltan calificaciones de calidad.")
+
+# Grafico 16: comparacion de los cuatro criterios.
+ax = promedios_calidad.T.plot(
+    kind="bar",
+    figsize=(11, 6),
+    color=["#2874A6", "#CA6F1E"],
+    width=0.7
+)
+
+ax.set_title(
+    "Calidad de respuestas por criterio y temperatura",
+    fontsize=14,
+    fontweight="bold"
+)
+ax.set_ylabel("Calificacion promedio (1 a 5)")
+ax.set_xlabel("Criterio evaluado")
+ax.set_xticklabels(
+    ["Precision", "Claridad", "Cumplimiento", "Coherencia"],
+    rotation=0
+)
+ax.set_ylim(0, 5.5)
+ax.legend(["Temperatura 0.2", "Temperatura 0.9"])
+ax.grid(axis="y", alpha=0.2)
+ax.set_axisbelow(True)
+
+plt.tight_layout()
+ruta = CARPETA_GRAFICOS / "16_calidad_por_criterio.png"
+plt.savefig(ruta, dpi=300, bbox_inches="tight")
+plt.close()
+
+print("Grafico guardado:", ruta)
+
+# Grafico 17: promedio general de calidad.
+promedio_general = promedios_calidad.mean(axis=1)
+
+fig, ax = plt.subplots(figsize=(9, 5.5))
+
+barras = ax.bar(
+    ["0.2", "0.9"],
+    promedio_general.values,
+    color=["#2874A6", "#CA6F1E"],
+    width=0.48
+)
+
+ax.set_title(
+    "Calidad general de respuestas por temperatura",
+    fontsize=14,
+    fontweight="bold"
+)
+ax.set_xlabel("Temperatura")
+ax.set_ylabel("Calificacion promedio (1 a 5)")
+ax.set_ylim(0, 5.5)
+ax.grid(axis="y", alpha=0.2)
+ax.set_axisbelow(True)
+
+for barra, valor in zip(barras, promedio_general.values):
+    ax.annotate(
+        f"{valor:.2f} / 5",
+        xy=(
+            barra.get_x() + barra.get_width() / 2,
+            barra.get_height()
+        ),
+        xytext=(0, 8),
+        textcoords="offset points",
+        ha="center",
+        fontsize=12,
+        fontweight="bold"
+    )
+
+fig.tight_layout()
+ruta = CARPETA_GRAFICOS / "17_calidad_general.png"
+fig.savefig(ruta, dpi=300, bbox_inches="tight")
+plt.close(fig)
+
+print("Grafico guardado:", ruta)
+print("\nTotal esperado del proyecto: 17 graficos.")

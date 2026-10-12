@@ -1,0 +1,326 @@
+﻿ID,Categoria,Temperatura,Pregunta,Respuesta,Precision_1_5,Claridad_1_5,Cumplimiento_1_5,Coherencia_1_5,Observaciones,Promedio_calidad
+1,generacion,0.2,"Redacta un correo formal dirigido a un profesor universitario para solicitar una prorroga de entrega. Incluye tres ideas: dificultad tecnica, avance del proyecto y compromiso de entrega.","**Asunto:** Solicitud de prorroga para entrega de [nombre del curso/trabajo]
+
+**[Tu nombre completo]**
+[Tu número de matrícula o identificación, si aplica]
+[Programa académico]
+[Correo electrónico]
+[Fecha: 11 de octubre de 2026]
+
+**Estimado/a Profesor/a [Apellido del profesor]:**
+
+Espero que este mensaje le encuentre bien. Me dirijo a usted con el fin de solicitar, de manera respetuosa, una **prorroga para la entrega del [nombre del trabajo/proyecto/actividad], originalmente programada para el [fecha original]**.
+
+En primer lugar, agradezco de antemano su comprensión y flexibilidad. Durante el desarrollo de este trabajo, he enfrentado **dificultades técnicas significativas** que han retrasado mi progreso. [Menciona brevemente el problema, por ejemplo: *""la falta de acceso a herramientas específicas requeridas para el análisis de datos""*, *""errores recurrentes en el software utilizado""*, o *""problemas de compatibilidad que no he podido resolver en el plazo establecido""*]. Aunque he intentado superar estos obstáculos con dedicación, considero que una extensión de [X días/semanas] sería necesaria para garantizar un resultado de calidad.
+
+Además, quiero destacar que el **avance del proyecto** ha sido constante, aunque más lento de lo previsto. Hasta la fecha, he completado [detallar brevemente: *""el 70% de la investigación teórica""*, *""la estructura inicial del informe""*, o *""los cálculos fundamentales, pero sin poder validar los resultados por [razón técnica]""*]. Estoy comprometido/a con cumplir con los estándares académicos y entregarle un trabajo que refleje el esfuerzo y el rigor que este curso merece.
+
+Por último, le aseguro mi **compromiso absoluto con la entrega en la nueva fecha propuesta** ([fecha sugerida, ej.: *el 25 de octubre de 2026*]). Entiendo la importancia de los plazos académicos y me comprometo a enviar una versión preliminar [o ""borrador""] antes de la fecha límite extendida, si lo considera oportuno. Adjunto [o: *""A continuación adjunto""*], si aplica, documentación que respalde mis dificultades (ej.: capturas de errores, correos con",4.0,4.0,3.0,4.0,"Incluye las tres ideas, pero el correo queda incompleto por limite de tokens; demasiadas plantillas.",3.75
+1,generacion,0.9,"Redacta un correo formal dirigido a un profesor universitario para solicitar una prorroga de entrega. Incluye tres ideas: dificultad tecnica, avance del proyecto y compromiso de entrega.","**Asunto:** Solicitud de prorroga de entrega – [Nombre del curso/código de asignatura]
+
+**Estimado/a Profesor/a [Apellido del profesor/a]:**
+
+Espero que se encuentre bien. Me dirijo a usted con el presente correo para solicitar amablemente una prorroga en la entrega del trabajo/tarea [nombre del trabajo o actividad, si procede] correspondiente a la asignatura **[Nombre del curso/código, ej. ""Fundamentos de Ingeniería de Software – 1001""]**. Reconozco la importancia de cumplir con los plazos establecidos y valoro el tiempo y esfuerzo que invierte en nuestra formación.
+
+A continuación, le detallo las razones que justifican mi solicitud, junto con mi compromiso de subsanarlas:
+
+1. **Dificultad técnica imprevista**: Durante el desarrollo del proyecto, he enfrentado [breve descripción de la dificultad, ej. *""dificultades para integrar un módulo específico en [nombre de la herramienta/software]""*, *""un error crítico en la versión actual del lenguaje o plataforma""* o *""problemas de acceso a recursos necesarios (ej. licencias, hardware) que no he podido resolver en el plazo original""*]. Estos obstáculos han ralentizado significativamente mi avance y, aunque he explorado alternativas (ej. [mencionar acción concreta: consultar foros, asesoría con compañeros, documentación técnica]), persisten sin una solución óptima a tiempo.
+
+2. **Avance parcial y plan de recuperación**: Hasta la fecha, he logrado [resumir en 1-2 líneas el avance: ej. *""completar el 70% de los requisitos técnicos, incluyendo [módulo X y funcionalidad Y]""* o *""desarrollar una prototipado funcional que demuestra el núcleo del proyecto""*]. Adjunto [si aplica] un documento o captura que acredite esto. Para compensar el tiempo perdido, he organizado mi agenda de la siguiente manera:
+   - **[Fecha propuesta para prórroga]** como nueva fecha límite.
+   - Priorización de tareas en [mencionar enfoque: ej. *""iteraciones cortas diarias con revisiones semanales""*, *""sesiones de debugging dedicadas""* o *""asistencia a talleres/comunidades técnicas recomendadas por usted""]*.
+
+3. **Compromiso de entrega y",4.0,4.0,3.0,4.0,"Incluye las tres ideas, pero el texto termina a mitad del tercer apartado por limite de tokens.",3.75
+2,generacion,0.2,Redacta una descripcion breve de una aplicacion de inteligencia artificial para mejorar la atencion al cliente en una empresa costarricense.,"**Nombre de la App:** **""IA Atención Costa Rica""**
+*Solución de Inteligencia Artificial para potenciar la experiencia del cliente en empresas locales*
+
+---
+**Descripción:**
+**""IA Atención Costa Rica""** es una plataforma de **inteligencia artificial y automatización** diseñada para optimizar la atención al cliente en empresas costarricenses, desde pymes hasta corporaciones. Combina **chatbots avanzados, análisis predictivo y herramientas de automatización** para reducir tiempos de respuesta, personalizar interacciones y mejorar la satisfacción del cliente, todo adaptado al contexto local.
+
+---
+### **🔹 Beneficios clave:**
+1. **Atención 24/7 con IA:**
+   - Chatbot inteligente que resuelve consultas frecuentes (facturación, horarios, inventario, quejas) en español y inglés, con voz humana y texto.
+   - Integración con WhatsApp, web y redes sociales para centralizar comunicaciones.
+
+2. **Automatización de procesos:**
+   - Gestión de tickets y escalado automático a agentes humanos cuando sea necesario.
+   - Recordatorios proactivos (ej.: renovación de servicios, seguimientos postventa).
+
+3. **Análisis de datos en tiempo real:**
+   - Dashboards con métricas de satisfacción (NPS, tiempo de respuesta), tendencias de quejas y oportunidades de mejora.
+   - Identificación de patrones para prevenir problemas (ej.: retrasos en entregas, fallas recurrentes).
+
+4. **Personalización local:**
+   - Adaptación a horarios costarricenses (ej.: atención prioritaria en fines de semana para sectores como turismo o retail).
+   - Soporte para colones (CRC) y pasarelas de pago locales (Mercado Pago, BCR, etc.).
+
+5. **Integración con herramientas empresariales:**
+   - Conexión con CRM como Salesforce, HubSpot o soluciones locales como **SAP Business One** o **Zoho**.
+   - Sincronización con bases de datos internas para acceso rápido a historiales de clientes.
+
+6. **Formación y escalabilidad:**
+   - Capacitación para equipos de atención con módulos de IA (ej.: cómo manejar interacciones con el chatbot).
+   - Planes escalables desde opciones básicas (chatbot solo) hasta soluciones integrales con",4.0,4.0,2.0,4.0,"Propuesta pertinente al contexto local, pero no es breve y termina incompleta.",3.5
+2,generacion,0.9,Redacta una descripcion breve de una aplicacion de inteligencia artificial para mejorar la atencion al cliente en una empresa costarricense.,"**Aplicación de IA: *""AI ClientCare""***
+**Optimiza la atención al cliente en empresas costarricenses con inteligencia artificial**
+
+**Descripción:**
+*""AI ClientCare""* es una **solución de inteligencia artificial** diseñada para **automatizar, personalizar y escalar** la atención al cliente en empresas de Costa Rica, desde pymes hasta corporaciones. Combina **chatbots con procesamiento de lenguaje natural (NLP)**, **análisis predictivo** y **bases de datos integradas** para ofrecer experiencias excepcionales y reducir tiempos de respuesta.
+
+---
+
+### **🔹 Funcionalidades clave:**
+1. **Asistente Virtual 24/7**
+   - Resuelve consultas frecuentes (facturas, devoluciones, dudas de producto) en **críptico y español**, con un tono adaptable a la cultura local.
+   - Reduce la carga de los agentes humanos en un **80%** en preguntas repetitivas.
+
+2. **Atención Multicanal**
+   - Integra **WhatsApp Business, correo electrónico, chat en web y redes sociales** en una sola plataforma.
+   - Traduce automáticamente mensajes de clientes internacionales (ej.: turistas).
+
+3. **Análisis Predictivo**
+   - Detecta **patrones de insatisfacción** en tiempo real (ej.: quejas por demoras en envíos) y sugiere acciones proactivas al equipo.
+   - Genera **informes personalizados** con métricas como NPS (Índice de Satisfacción del Cliente) o tiempo promedio de resolución.
+
+4. **Base de Conocimiento Local**
+   - Accede a **normativas costarricenses** (ej.: garantías legales, políticas de privacidad bajo la *LEY 8566*) para responder con precisión.
+   - Integra CRM locales como **Zoho, Freshdesk o Salesforce** para historial completo del cliente.
+
+5. **Gestión de Quejas Emocionales**
+   - Usa **análisis de sentimiento** para identificar clientes frustrados y escalar casos con urgencia.
+   - Sugiere respuestas empáticas basadas en estudios de **comportamiento del consumidor en CR**.
+
+6. **Personalización con IA Generativa**
+   - Genera **respuestas dinámicas** según el contexto",2.0,3.0,2.0,3.0,"Incluye cifra de 80% sin respaldo, menciona críptico como idioma y normativa posiblemente incorrecta; extensa y truncada.",2.5
+3,resumen,0.2,"Resume en tres viñetas el siguiente texto, destacando aplicaciones, beneficios y riesgos: La inteligencia artificial es una tecnología que permite desarrollar sistemas capaces de procesar información, identificar patrones y generar respuestas a partir de datos. Durante los últimos años, su utilización ha aumentado en distintos sectores debido a los avances en capacidad de procesamiento y disponibilidad de información. En medicina, la inteligencia artificial apoya el análisis de imágenes, ayuda a identificar posibles enfermedades y facilita la organización de información clínica. Estas herramientas pueden colaborar con los profesionales, pero no sustituyen la valoración médica ni la responsabilidad humana. En educación, algunas aplicaciones adaptan materiales de aprendizaje a las necesidades de los estudiantes, proporcionan explicaciones y apoyan la preparación de actividades académicas. Sin embargo, también es necesario promover el pensamiento crítico para evitar una dependencia excesiva de estas herramientas. En la industria, los sistemas inteligentes ayudan a supervisar procesos de producción, detectar fallas en equipos y analizar indicadores de rendimiento. Algunas empresas utilizan algoritmos para organizar inventarios, pronosticar la demanda y reducir desperdicios. En el comercio, la inteligencia artificial permite analizar preferencias de consumidores, recomendar productos y mejorar la atención al cliente mediante asistentes virtuales. Estas aplicaciones pueden contribuir a reducir tiempos de espera y mejorar la productividad. A pesar de sus beneficios, su implementación presenta desafíos importantes. Uno es la privacidad de los datos, porque algunos sistemas procesan información personal que debe protegerse adecuadamente. Otro desafío corresponde a los sesgos algorítmicos, que pueden provocar resultados injustos cuando los datos utilizados para entrenar los modelos no representan correctamente a toda la población. La transparencia también es fundamental, porque las personas necesitan comprender las limitaciones de los sistemas que utilizan. Además, las organizaciones deben considerar costos de implementación, consumo de recursos tecnológicos y capacitación de sus trabajadores. La automatización puede transformar ciertas actividades laborales, por lo que resulta importante preparar al personal para asumir nuevas responsabilidades. En Costa Rica, la inteligencia artificial podría apoyar procesos de instituciones públicas, empresas de servicios y organizaciones productivas. Por ejemplo, podría facilitar la gestión de consultas ciudadanas, la organización de documentos y el análisis de información administrativa. No obstante, cualquier implementación debe considerar seguridad de datos, supervisión humana y cumplimiento de las normas correspondientes. El uso responsable de esta tecnología requiere evaluar resultados y establecer mecanismos para corregir errores. También es importante reconocer que una respuesta generada automáticamente no siempre es correcta, aunque esté redactada de manera convincente. Por esa razón, las organizaciones deben verificar la información antes de tomar decisiones importantes. Asimismo, es recomendable definir objetivos medibles antes de incorporar herramientas inteligentes y comparar los resultados obtenidos con los procedimientos anteriores. Una evaluación adecuada debería considerar no solamente la rapidez de las respuestas, sino también su exactitud, utilidad, consistencia y accesibilidad para diferentes usuarios. Finalmente, la participación de especialistas y personas afectadas permite identificar riesgos que podrían pasar inadvertidos durante el diseño. En conclusión, la inteligencia artificial ofrece oportunidades para mejorar la eficiencia y desarrollar nuevas soluciones, pero su aplicación debe acompañarse de principios éticos, controles adecuados y participación humana. Estas decisiones requieren seguimiento continuo y evaluación responsable.","Aquí tienes un resumen en **tres viñetas clave**, destacando **aplicaciones**, **beneficios** y **riesgos** de la inteligencia artificial (IA), junto con recomendaciones éticas:
+
+---
+
+### **1. Aplicaciones y beneficios por sectores**
+**🔹 Sectores clave y usos:**
+- **Medicina**: Análisis de imágenes médicas, diagnóstico asistido y gestión de historiales clínicos (ej.: detección temprana de enfermedades).
+- **Educación**: Adaptación de contenidos, tutorías personalizadas y generación de materiales didácticos (ej.: plataformas como Duolingo o Khanmati).
+- **Industria**: Monitoreo de producción, mantenimiento predictivo y optimización de inventarios (ej.: robots en cadenas de suministro).
+- **Comercio**: Recomendaciones personalizadas, chatbots para atención al cliente y predicción de tendencias de consumo (ej.: algoritmos de Amazon o Netflix).
+- **Gobierno (ej.: Costa Rica)**: Automatización de trámites ciudadanos, análisis de datos administrativos y gestión de consultas públicas.
+
+**💡 Beneficios destacados:**
+✅ **Eficiencia**: Reducción de tiempos en diagnósticos, producción o atención al cliente.
+✅ **Personalización**: Adaptación a necesidades individuales (ej.: educación o marketing).
+✅ **Prevención**: Detección temprana de fallos en equipos o enfermedades.
+✅ **Accesibilidad**: Democratización de servicios (ej.: diagnóstico médico en zonas remotas).
+
+---
+
+### **2. Riesgos y desafíos críticos**
+**⚠️ Principales amenazas:**
+- **Privacidad y seguridad**: Procesamiento de datos sensibles (ej.: información médica o financiera) sin garantías de confidencialidad.
+- **Sesgos algorítmicos**: Decisiones injustas si los datos de entrenamiento no reflejan diversidad (ej.: discriminación en préstamos o contrataciones).
+- **Falta de transparencia**: ""Cajas negras"" que dificultan entender cómo se toman decisiones automatizadas.
+- **Automatización laboral**: Desplazamiento de empleos o cambios bruscos en roles profesionales sin preparación.
+- **Desinformación**: Respuestas automatizadas convincentes pero incorrectas (ej.: noticias falsas generadas por",3.0,3.0,1.0,3.0,No cumple el formato de tres viñetas; añade ejemplos ajenos al texto y queda truncada.,2.5
+3,resumen,0.9,"Resume en tres viñetas el siguiente texto, destacando aplicaciones, beneficios y riesgos: La inteligencia artificial es una tecnología que permite desarrollar sistemas capaces de procesar información, identificar patrones y generar respuestas a partir de datos. Durante los últimos años, su utilización ha aumentado en distintos sectores debido a los avances en capacidad de procesamiento y disponibilidad de información. En medicina, la inteligencia artificial apoya el análisis de imágenes, ayuda a identificar posibles enfermedades y facilita la organización de información clínica. Estas herramientas pueden colaborar con los profesionales, pero no sustituyen la valoración médica ni la responsabilidad humana. En educación, algunas aplicaciones adaptan materiales de aprendizaje a las necesidades de los estudiantes, proporcionan explicaciones y apoyan la preparación de actividades académicas. Sin embargo, también es necesario promover el pensamiento crítico para evitar una dependencia excesiva de estas herramientas. En la industria, los sistemas inteligentes ayudan a supervisar procesos de producción, detectar fallas en equipos y analizar indicadores de rendimiento. Algunas empresas utilizan algoritmos para organizar inventarios, pronosticar la demanda y reducir desperdicios. En el comercio, la inteligencia artificial permite analizar preferencias de consumidores, recomendar productos y mejorar la atención al cliente mediante asistentes virtuales. Estas aplicaciones pueden contribuir a reducir tiempos de espera y mejorar la productividad. A pesar de sus beneficios, su implementación presenta desafíos importantes. Uno es la privacidad de los datos, porque algunos sistemas procesan información personal que debe protegerse adecuadamente. Otro desafío corresponde a los sesgos algorítmicos, que pueden provocar resultados injustos cuando los datos utilizados para entrenar los modelos no representan correctamente a toda la población. La transparencia también es fundamental, porque las personas necesitan comprender las limitaciones de los sistemas que utilizan. Además, las organizaciones deben considerar costos de implementación, consumo de recursos tecnológicos y capacitación de sus trabajadores. La automatización puede transformar ciertas actividades laborales, por lo que resulta importante preparar al personal para asumir nuevas responsabilidades. En Costa Rica, la inteligencia artificial podría apoyar procesos de instituciones públicas, empresas de servicios y organizaciones productivas. Por ejemplo, podría facilitar la gestión de consultas ciudadanas, la organización de documentos y el análisis de información administrativa. No obstante, cualquier implementación debe considerar seguridad de datos, supervisión humana y cumplimiento de las normas correspondientes. El uso responsable de esta tecnología requiere evaluar resultados y establecer mecanismos para corregir errores. También es importante reconocer que una respuesta generada automáticamente no siempre es correcta, aunque esté redactada de manera convincente. Por esa razón, las organizaciones deben verificar la información antes de tomar decisiones importantes. Asimismo, es recomendable definir objetivos medibles antes de incorporar herramientas inteligentes y comparar los resultados obtenidos con los procedimientos anteriores. Una evaluación adecuada debería considerar no solamente la rapidez de las respuestas, sino también su exactitud, utilidad, consistencia y accesibilidad para diferentes usuarios. Finalmente, la participación de especialistas y personas afectadas permite identificar riesgos que podrían pasar inadvertidos durante el diseño. En conclusión, la inteligencia artificial ofrece oportunidades para mejorar la eficiencia y desarrollar nuevas soluciones, pero su aplicación debe acompañarse de principios éticos, controles adecuados y participación humana. Estas decisiones requieren seguimiento continuo y evaluación responsable.","Aquí tienes un resumen en tres viñetas clave sobre **inteligencia artificial (IA)**, destacando sus **aplicaciones**, **beneficios** y **riesgos**:
+
+---
+**🔹 Aplicaciones destacadas**
+- **Medicina**: Análisis avanzado de imágenes médicas, diagnóstico asistido y gestión de historiales clínicos.
+- **Educación**: Adaptación de contenidos, tutores virtuales y herramientas para personalizar el aprendizaje.
+- **Industria**: Monitoreo de producción en tiempo real, optimización de inventarios y predicción de fallos.
+- **Comercio**: Recomendaciones de productos basadas en preferencias, atención al cliente automatizada y reducción de tiempos.
+*Nota*: También tiene potencial en gestión pública (ej.: tramites administrativos en Costa Rica), aunque se requieren ajustes éticos.
+
+---
+
+**🌟 Beneficios**
+✅ **Eficiencia operativa**: Automatización de tareas repetitivas (ej.: análisis de datos masivos).
+✅ **Personalización**: Soluciones adaptadas a necesidades específicas (ej.: educación o salud).
+✅ **Acceso a insights**: Detección temprana de patrones (ej.: fraudes, enfermedades) o mejora de productos.
+✅ **Reducción de costos**: Optimización de recursos y menor dependencia de procesos manuales.
+✅ **Inclusión**: Herramientas accesibles para poblaciones diversas (si se diseña con diversidad en datos).
+*Contexto*: En entornos regulados (como Costa Rica), puede agilizar servicios públicos con menor carga administrativa.
+
+---
+**⚠️ Riesgos y desafíos**
+- **Privacidad y seguridad**: Tratamiento de datos sensibles (ej.: información médica o personal) sin protecciones robustas.
+- **Sesgos algorítmicos**: Decisiones injustas si los modelos no reflejan diversidad (ej.: discriminación en créditos o contratación).
+- **Falta de transparencia**: ""Cajas negras"" que dificultan entender cómo toman decisiones los sistemas (ej.: diagnósticos automatizados).
+- **Automatización laboral**: Desplazamiento de puestos o resistencia al cambio en trabajadores.
+- **Dependencia excesiva**: Uso acrítico en educación (ej.: estudiante que no desarrolla pensamiento crítico) o medicina (",3.0,3.0,1.0,3.0,No cumple el formato de tres viñetas; amplía contenido y queda truncada.,2.5
+4,resumen,0.2,"Resume en dos oraciones el siguiente texto, mencionando sus aplicaciones y ventajas principales: Python es un lenguaje de programación de alto nivel que se utiliza en diferentes áreas de la informática. Una de sus principales características es que posee una sintaxis relativamente sencilla, lo que facilita la lectura y comprensión del código. Por esta razón, suele utilizarse en cursos universitarios y programas de formación para personas que comienzan a aprender programación. Generalmente, Python permite desarrollar soluciones mediante instrucciones claras y organizadas. Esto no significa que todos los problemas sean fáciles de resolver, sino que el lenguaje ofrece herramientas que simplifican algunas tareas. En desarrollo de software, Python se utiliza para crear aplicaciones, automatizar procesos y construir servicios que se comunican mediante interfaces de programación. También es frecuente su utilización en análisis de datos, donde permite organizar información, realizar cálculos y representar resultados mediante gráficos. Existen bibliotecas especializadas que facilitan estas actividades y ayudan a reducir la cantidad de código que debe escribir el programador. En inteligencia artificial, Python es ampliamente utilizado para desarrollar aplicaciones que trabajan con modelos de aprendizaje automático y procesamiento del lenguaje natural. Las bibliotecas disponibles permiten preparar datos, realizar pruebas y conectar programas con servicios tecnológicos. Un ejemplo es la comunicación entre una aplicación Python y un modelo de lenguaje ejecutado localmente mediante Ollama. En este caso, el programa puede enviar preguntas, recibir respuestas y almacenar resultados para su posterior análisis. Otra aplicación importante corresponde a la automatización de tareas repetitivas. Mediante scripts, los usuarios pueden organizar archivos, procesar documentos y generar reportes sin realizar manualmente cada operación. En desarrollo web, Python también permite implementar funcionalidades del servidor, gestionar información y construir servicios para diferentes aplicaciones. Entre sus ventajas se encuentra la disponibilidad de documentación, recursos educativos y una comunidad de desarrolladores que comparte conocimientos. Sin embargo, aprender Python requiere comprender conceptos como variables, estructuras de control, funciones, archivos y manejo de errores. También es necesario aplicar buenas prácticas para mantener el código organizado y facilitar su mantenimiento. La utilización de entornos virtuales permite administrar las bibliotecas necesarias para cada proyecto y reducir conflictos entre versiones. En proyectos universitarios, estas herramientas resultan útiles porque facilitan la reproducción de experimentos y la organización de archivos. Por otra parte, Python no siempre es la mejor opción para todas las aplicaciones, especialmente cuando existen requisitos específicos de rendimiento o integración con determinados sistemas. La elección de un lenguaje debe considerar las necesidades del proyecto, los recursos disponibles y la experiencia del equipo de desarrollo. También conviene escribir pruebas automáticas que permitan comprobar el funcionamiento de las funciones después de cada cambio. Los comentarios y la documentación ayudan a explicar decisiones importantes, pero no reemplazan nombres claros ni una estructura comprensible. Cuando se trabaja con datos personales, el programador debe proteger las credenciales y evitar compartir información sensible en repositorios públicos. En conclusión, Python es una herramienta versátil que permite desarrollar soluciones en automatización, análisis de datos, inteligencia artificial y desarrollo web. Su facilidad de lectura, sus bibliotecas y su comunidad lo convierten en una alternativa útil tanto para estudiantes como para profesionales.","**Resumen en dos oraciones:**
+
+Python es un lenguaje de programación de alto nivel, conocido por su **sintaxis sencilla y versatilidad**, que lo hace ideal para **automatización de tareas, análisis de datos, inteligencia artificial y desarrollo web**, gracias a sus bibliotecas especializadas y herramientas que optimizan el desarrollo. Sus **ventajas principales** incluyen facilidad de aprendizaje, una extensa comunidad de apoyo, entornos virtuales para gestión de proyectos y seguridad en el manejo de datos, aunque su elección depende de los requisitos específicos del proyecto y el rendimiento necesario.",5.0,5.0,5.0,5.0,"Resume en dos oraciones, incluye aplicaciones y ventajas principales.",5.0
+4,resumen,0.9,"Resume en dos oraciones el siguiente texto, mencionando sus aplicaciones y ventajas principales: Python es un lenguaje de programación de alto nivel que se utiliza en diferentes áreas de la informática. Una de sus principales características es que posee una sintaxis relativamente sencilla, lo que facilita la lectura y comprensión del código. Por esta razón, suele utilizarse en cursos universitarios y programas de formación para personas que comienzan a aprender programación. Generalmente, Python permite desarrollar soluciones mediante instrucciones claras y organizadas. Esto no significa que todos los problemas sean fáciles de resolver, sino que el lenguaje ofrece herramientas que simplifican algunas tareas. En desarrollo de software, Python se utiliza para crear aplicaciones, automatizar procesos y construir servicios que se comunican mediante interfaces de programación. También es frecuente su utilización en análisis de datos, donde permite organizar información, realizar cálculos y representar resultados mediante gráficos. Existen bibliotecas especializadas que facilitan estas actividades y ayudan a reducir la cantidad de código que debe escribir el programador. En inteligencia artificial, Python es ampliamente utilizado para desarrollar aplicaciones que trabajan con modelos de aprendizaje automático y procesamiento del lenguaje natural. Las bibliotecas disponibles permiten preparar datos, realizar pruebas y conectar programas con servicios tecnológicos. Un ejemplo es la comunicación entre una aplicación Python y un modelo de lenguaje ejecutado localmente mediante Ollama. En este caso, el programa puede enviar preguntas, recibir respuestas y almacenar resultados para su posterior análisis. Otra aplicación importante corresponde a la automatización de tareas repetitivas. Mediante scripts, los usuarios pueden organizar archivos, procesar documentos y generar reportes sin realizar manualmente cada operación. En desarrollo web, Python también permite implementar funcionalidades del servidor, gestionar información y construir servicios para diferentes aplicaciones. Entre sus ventajas se encuentra la disponibilidad de documentación, recursos educativos y una comunidad de desarrolladores que comparte conocimientos. Sin embargo, aprender Python requiere comprender conceptos como variables, estructuras de control, funciones, archivos y manejo de errores. También es necesario aplicar buenas prácticas para mantener el código organizado y facilitar su mantenimiento. La utilización de entornos virtuales permite administrar las bibliotecas necesarias para cada proyecto y reducir conflictos entre versiones. En proyectos universitarios, estas herramientas resultan útiles porque facilitan la reproducción de experimentos y la organización de archivos. Por otra parte, Python no siempre es la mejor opción para todas las aplicaciones, especialmente cuando existen requisitos específicos de rendimiento o integración con determinados sistemas. La elección de un lenguaje debe considerar las necesidades del proyecto, los recursos disponibles y la experiencia del equipo de desarrollo. También conviene escribir pruebas automáticas que permitan comprobar el funcionamiento de las funciones después de cada cambio. Los comentarios y la documentación ayudan a explicar decisiones importantes, pero no reemplazan nombres claros ni una estructura comprensible. Cuando se trabaja con datos personales, el programador debe proteger las credenciales y evitar compartir información sensible en repositorios públicos. En conclusión, Python es una herramienta versátil que permite desarrollar soluciones en automatización, análisis de datos, inteligencia artificial y desarrollo web. Su facilidad de lectura, sus bibliotecas y su comunidad lo convierten en una alternativa útil tanto para estudiantes como para profesionales.","**Resumen en dos oraciones:**
+
+Python es un lenguaje de programación de alto nivel y sintaxis sencilla, ampliamente utilizado en desarrollo de software, análisis de datos, inteligencia artificial y automatización de tareas gracias a sus herramientas como bibliotecas especializadas y una extensa comunidad. Sus ventajas principales incluyen facilidad de aprendizaje para principiantes, eficiencia en la resolución de problemas complejos y versatilidad para construir desde aplicaciones web hasta modelos de aprendizaje automático, aunque su rendimiento puede ser limitado en casos de alta exigencia técnica.",5.0,5.0,5.0,5.0,"Resume en dos oraciones, incluye aplicaciones y ventajas principales.",5.0
+5,correccion_traduccion,0.2,Corrige la ortografia y gramatica de esta oracion sin cambiar su significado: La intelijencia artificial esta cambiando la manera en que las empresas prosesan la informacion.,"Aquí tienes la oración corregida sin alterar su significado:
+
+**""La inteligencia artificial está cambiando la manera en que las empresas procesan la información.""**
+
+Cambios realizados:
+- *intelijencia* → **inteligencia** (ortografía).
+- *prosesan* → **procesan** (ortografía).
+- *esta* → **está** (acentuación).",5.0,5.0,5.0,5.0,Corrige correctamente las faltas y conserva literalmente el significado y estructura.,5.0
+5,correccion_traduccion,0.9,Corrige la ortografia y gramatica de esta oracion sin cambiar su significado: La intelijencia artificial esta cambiando la manera en que las empresas prosesan la informacion.,"Aquí tienes la oración corregida, manteniendo su significado original:
+
+**""La inteligencia artificial está cambiando la forma en que las empresas procesan la información.""**
+
+### Cambios realizados:
+1. **""Intelijencia"" → ""Inteligencia""** (ortografía de la palabra clave).
+2. **""esta"" → ""está""** (acento para indicar que es la forma del verbo *estar*).
+3. **""prosesan"" → ""procesan""** (ortografía de *procesar*).
+4. **""la manera"" → ""la forma""** (ambos son correctos, pero en este contexto ""forma"" suena más natural para describir un cambio en el método o método de procesamiento). Si prefieres conservar ""manera"", también sería correcto.
+
+Si necesitas ajustes específicos en algún otro aspecto (como un estilo más formal o técnico), ¡avísame!",5.0,5.0,4.0,5.0,"Correccion correcta, aunque sustituye manera por forma sin necesidad.",4.75
+6,correccion_traduccion,0.2,Traduce al ingles la siguiente oracion: La inteligencia artificial puede ayudar a mejorar los procesos de produccion en las empresas.,"The translation of your sentence into English is:
+
+**""Artificial intelligence can help improve production processes in companies.""**",5.0,5.0,5.0,5.0,Traduccion natural y gramaticalmente correcta.,5.0
+6,correccion_traduccion,0.9,Traduce al ingles la siguiente oracion: La inteligencia artificial puede ayudar a mejorar los procesos de produccion en las empresas.,"""The **artificial intelligence** can help improve **production processes** in companies.""",3.0,4.0,4.0,4.0,"Traduccion comprensible, pero el articulo The ante artificial intelligence resulta poco natural.",3.75
+7,codigo,0.2,Escribe una funcion sencilla en Python que reciba dos numeros y devuelva su suma. Incluye un ejemplo de uso.,"Aquí tienes una función sencilla en Python que suma dos números, junto con un ejemplo de uso:
+
+```python
+def sumar(a, b):
+    """"""Función que suma dos números y devuelve el resultado.
+
+    Args:
+        a (int o float): Primer número a sumar.
+        b (int o float): Segundo número a sumar.
+
+    Returns:
+        int o float: Resultado de la suma.
+    """"""
+    return a + b
+
+# Ejemplo de uso:
+numero1 = 5
+numero2 = 7
+resultado = sumar(numero1, numero2)
+print(f""La suma de {numero1} y {numero2} es: {resultado}"")
+```
+
+**Salida del ejemplo:**
+```
+La suma de 5 y 7 es: 12
+```
+
+Si quieres probar con otros números, solo cambia los valores de `numero1` y `numero2`. La función también funciona con decimales, por ejemplo: `sumar(3.5, 2.1)` devolverá `5.6`.",5.0,5.0,5.0,5.0,Funcion Python correcta y ejemplo funcional.,5.0
+7,codigo,0.9,Escribe una funcion sencilla en Python que reciba dos numeros y devuelva su suma. Incluye un ejemplo de uso.,"Aquí tienes una función sencilla en Python que suma dos números, junto con un ejemplo de uso:
+
+```python
+def sumar(a, b):
+    """"""Suma dos números y devuelve el resultado.""""""
+    return a + b
+
+# Ejemplo de uso:
+numero1 = 5
+numero2 = 7
+resultado = sumar(numero1, numero2)
+print(f""La suma de {numero1} y {numero2} es: {resultado}"")
+```
+
+### Explicación:
+1. La función `sumar(a, b)` recibe dos parámetros, `a` y `b`, y devuelve su suma.
+2. En el ejemplo, se llaman a la función con los valores `5` y `7`, y el resultado se guarda en la variable `resultado`.
+3. Finalmente, se imprime el resultado utilizando una f-string (o *formatted string literal*) para mostrar un mensaje legible.
+
+### Salida esperada:
+```
+La suma de 5 y 7 es: 12
+```
+
+Si quieres probar otros valores, simplemente cambia los valores de `numero1` y `numero2`. 😊",5.0,5.0,5.0,5.0,Funcion Python correcta y ejemplo funcional.,5.0
+8,codigo,0.2,"Genera una consulta SQL Server que muestre el nombre y salario de los empleados cuyo salario sea mayor a 500000, ordenados de mayor a menor. Supone una tabla Empleados con columnas Nombre y Salario.","Aquí tienes la consulta SQL Server para mostrar los nombres y salarios de los empleados con salario mayor a 500,000, ordenados de mayor a menor:
+
+```sql
+SELECT Nombre, Salario
+FROM Empleados
+WHERE Salario > 500000
+ORDER BY Salario DESC;
+```
+
+Esta consulta:
+1. Selecciona las columnas `Nombre` y `Salario`
+2. Filtra solo los registros donde `Salario` es mayor a 500,000
+3. Ordena los resultados por `Salario` en orden descendente (de mayor a menor)",5.0,5.0,5.0,5.0,"Consulta SQL correcta, con filtro y orden descendente.",5.0
+8,codigo,0.9,"Genera una consulta SQL Server que muestre el nombre y salario de los empleados cuyo salario sea mayor a 500000, ordenados de mayor a menor. Supone una tabla Empleados con columnas Nombre y Salario.","Aquí tienes una consulta SQL Server que muestra el nombre y salario de los empleados con salario mayor a 500,000, ordenados de mayor a menor:
+
+```sql
+SELECT Nombre, Salario
+FROM Empleados
+WHERE Salario > 500000
+ORDER BY Salario DESC;
+```
+
+Esta consulta:
+1. Selecciona las columnas `Nombre` y `Salario`
+2. Filtra solo los registros donde `Salario` sea mayor a 500,000
+3. Ordena los resultados de forma descendente (de mayor a menor) según el salario",5.0,5.0,5.0,5.0,"Consulta SQL correcta, con filtro y orden descendente.",5.0
+9,razonamiento_veracidad,0.2,"Un estudiante tiene 5 cursos y obtiene las notas 80, 90, 75, 85 y 70. Calcula el promedio y explica el procedimiento.","Para calcular el **promedio** de las notas del estudiante, seguimos estos pasos:
+
+### **Datos:**
+- Notas: 80, 90, 75, 85, 70
+- Número de cursos: **5**
+
+---
+
+### **Procedimiento:**
+
+1. **Sumar todas las notas:**
+   \( 80 + 90 + 75 + 85 + 70 = 400 \)
+
+2. **Dividir la suma entre el número de cursos (5):**
+   \( \frac{400}{5} = 80 \)
+
+---
+
+### **Resultado:**
+El **promedio** del estudiante es **80**.
+
+---
+### **Explicación breve:**
+El promedio se calcula sumando todas las calificaciones y dividiendo entre la cantidad total de cursos. En este caso, la suma es 400, y al dividirla entre 5, obtenemos 80.",5.0,5.0,5.0,5.0,"Suma 400, divide entre cinco y obtiene 80 correctamente.",5.0
+9,razonamiento_veracidad,0.9,"Un estudiante tiene 5 cursos y obtiene las notas 80, 90, 75, 85 y 70. Calcula el promedio y explica el procedimiento.","Para calcular el **promedio aritmético** de las notas del estudiante, sigue estos pasos:
+
+---
+
+### **Datos:**
+Notas: 80, 90, 75, 85, 70
+
+---
+
+### **1. Suma las notas:**
+Agrega todas las calificaciones:
+\[
+80 + 90 + 75 + 85 + 70 = 400
+\]
+
+---
+
+### **2. Cuenta el número de cursos:**
+Hay **5** notas.
+
+---
+
+### **3. Divide la suma entre el número de cursos:**
+\[
+\text{Promedio} = \frac{400}{5} = 80
+\]
+
+---
+
+### **Resultado:**
+El promedio del estudiante es **80**.
+
+---
+### **Fórmula general:**
+\[
+\text{Promedio} = \frac{\text{Suma de las notas}}{\text{Número de cursos}}
+\]
+
+En este caso, sustituimos los valores para obtener el resultado.",5.0,5.0,5.0,5.0,"Suma 400, divide entre cinco y obtiene 80 correctamente.",5.0
+10,razonamiento_veracidad,0.2,Cual es la capital de Costa Rica y en que año se fundo la Universidad de Costa Rica? Responde de forma breve.,"- **Capital de Costa Rica**: San José.
+- **Año de fundación de la Universidad de Costa Rica**: 1940.",5.0,5.0,5.0,5.0,Responde de forma breve con San Jose y 1940.,5.0
+10,razonamiento_veracidad,0.9,Cual es la capital de Costa Rica y en que año se fundo la Universidad de Costa Rica? Responde de forma breve.,"- **Capital de Costa Rica**: San José.
+
+- **Universidad de Costa Rica**: Se fundó el **11 de noviembre de 1940** (como Universidad Nacional, luego adoptó su nombre actual en 1942).",3.0,4.0,4.0,3.0,"Datos centrales correctos; agrega afirmacion historica no solicitada sobre el nombre de la UCR, que requiere verificacion y es posiblemente erronea.",3.5
