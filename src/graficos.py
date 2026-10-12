@@ -413,3 +413,103 @@ grafico_recursos(
 
 print("\nLos seis graficos de recursos se generaron correctamente.")
 print("Total del proyecto: 13 graficos.")
+
+
+# ------------------------------------------------------------
+# Graficos 14 y 15: comparacion de temperaturas 0.2 y 0.9
+# ------------------------------------------------------------
+
+ARCHIVO_TEMPERATURAS = (
+    BASE / "results" / "comparacion_temperaturas.csv"
+)
+
+datos_temperaturas = pd.read_csv(
+    ARCHIVO_TEMPERATURAS,
+    encoding="utf-8-sig"
+)
+
+
+def grafico_temperaturas(metrica, titulo, unidad, archivo_salida):
+    filtro = datos_temperaturas[
+        datos_temperaturas["Metrica"] == metrica
+    ].copy()
+
+    filtro["Temperatura"] = filtro["Temperatura"].astype(float)
+
+    filtro = filtro.set_index("Temperatura").reindex(
+        [0.2, 0.9]
+    )
+
+    promedios = filtro["Promedio"].tolist()
+    desviaciones = filtro["Desviacion"].tolist()
+
+    if any(pd.isna(valor) for valor in promedios):
+        raise ValueError(f"Faltan datos para: {metrica}")
+
+    fig, ax = plt.subplots(figsize=(9, 5.5))
+
+    barras = ax.bar(
+        ["0.2", "0.9"],
+        promedios,
+        color=["#2874A6", "#CA6F1E"],
+        width=0.48
+    )
+
+    ax.set_title(titulo, fontsize=15, fontweight="bold")
+    ax.set_xlabel("Temperatura")
+    ax.set_ylabel(unidad)
+    ax.set_ylim(0, max(promedios) * 1.25)
+    ax.grid(axis="y", alpha=0.2)
+    ax.set_axisbelow(True)
+
+    for barra, valor in zip(barras, promedios):
+        ax.annotate(
+            f"{valor:.2f}",
+            xy=(
+                barra.get_x() + barra.get_width() / 2,
+                valor
+            ),
+            xytext=(0, 8),
+            textcoords="offset points",
+            ha="center",
+            fontsize=12,
+            fontweight="bold"
+        )
+
+    fig.text(
+        0.5,
+        0.04,
+        (
+            f"Desviacion: 0.2 = {desviaciones[0]:.2f} | "
+            f"0.9 = {desviaciones[1]:.2f}"
+        ),
+        ha="center",
+        fontsize=9
+    )
+
+    fig.subplots_adjust(bottom=0.17)
+
+    ruta = CARPETA_GRAFICOS / archivo_salida
+    fig.savefig(ruta, dpi=300, bbox_inches="tight")
+    plt.close(fig)
+
+    print("Grafico de temperaturas guardado:", ruta)
+
+
+# Grafico 14: velocidad por temperatura.
+grafico_temperaturas(
+    "Velocidad (tokens/s)",
+    "Velocidad promedio por temperatura",
+    "Tokens por segundo",
+    "14_temperatura_velocidad.png"
+)
+
+# Grafico 15: tiempo de respuesta por temperatura.
+grafico_temperaturas(
+    "Tiempo total (segundos)",
+    "Tiempo total promedio por temperatura",
+    "Segundos",
+    "15_temperatura_tiempo.png"
+)
+
+print("\nTotal esperado: 15 graficos.")
