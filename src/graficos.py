@@ -249,3 +249,167 @@ grafico_comparativo(
 )
 
 print("\nLos cuatro graficos comparativos se generaron correctamente.")
+
+
+# ------------------------------------------------------------
+# Graficos 8 al 13: comparacion de recursos Windows vs Docker
+# Se utilizan las tres mediciones de cada entorno.
+# ------------------------------------------------------------
+
+ARCHIVO_RECURSOS = (
+    BASE / "results" / "comparacion_recursos_resumen.csv"
+)
+
+datos_recursos = pd.read_csv(
+    ARCHIVO_RECURSOS,
+    encoding="utf-8-sig"
+)
+
+
+def grafico_recursos(metrica, titulo, unidad, archivo_salida):
+    # Seleccionamos la metrica y ordenamos los entornos.
+    filtro = datos_recursos[
+        datos_recursos["Metrica"] == metrica
+    ].copy()
+
+    filtro = filtro.set_index("Entorno").reindex(
+        ["Windows", "Docker"]
+    )
+
+    if filtro["Promedio_3_ejecuciones"].isna().any():
+        raise ValueError(
+            f"No se encontraron los datos de: {metrica}"
+        )
+
+    promedios = filtro["Promedio_3_ejecuciones"].tolist()
+    desviaciones = filtro[
+        "Desviacion_entre_ejecuciones"
+    ].tolist()
+
+    fig, ax = plt.subplots(figsize=(9, 5.5))
+
+    barras = ax.bar(
+        ["Windows", "Docker"],
+        promedios,
+        color=["#2874A6", "#239B56"],
+        width=0.48
+    )
+
+    ax.set_title(
+        titulo,
+        fontsize=15,
+        fontweight="bold",
+        pad=18
+    )
+
+    ax.set_ylabel(unidad, fontsize=11)
+    ax.grid(axis="y", alpha=0.2)
+    ax.set_axisbelow(True)
+
+    # Mostramos el promedio encima de cada barra.
+    for barra, promedio in zip(barras, promedios):
+        ax.annotate(
+            f"{promedio:.2f}",
+            xy=(
+                barra.get_x() + barra.get_width() / 2,
+                promedio
+            ),
+            xytext=(0, 8),
+            textcoords="offset points",
+            ha="center",
+            fontsize=12,
+            fontweight="bold"
+        )
+
+    ax.set_ylim(0, max(promedios) * 1.25)
+
+    # Mostramos la desviacion entre las tres ejecuciones.
+    informacion = (
+        f"Windows: desviacion = {desviaciones[0]:.2f}   |   "
+        f"Docker: desviacion = {desviaciones[1]:.2f}"
+    )
+
+    fig.text(
+        0.5,
+        0.055,
+        informacion,
+        ha="center",
+        fontsize=9,
+        color="#555555"
+    )
+
+    # Aclaramos que se mide el equipo anfitrion.
+    fig.text(
+        0.5,
+        0.025,
+        "Ambos entornos utilizan Ollama en Windows",
+        ha="center",
+        fontsize=8,
+        color="#777777"
+    )
+
+    fig.subplots_adjust(bottom=0.20, top=0.87)
+
+    ruta = CARPETA_GRAFICOS / archivo_salida
+
+    fig.savefig(
+        ruta,
+        dpi=300,
+        bbox_inches="tight"
+    )
+
+    plt.close(fig)
+
+    print("Grafico de recursos guardado:", ruta)
+
+
+# Grafico 8: CPU del sistema.
+grafico_recursos(
+    "CPU sistema (%)",
+    "Uso promedio de CPU del sistema",
+    "Porcentaje (%)",
+    "08_cpu_sistema.png"
+)
+
+# Grafico 9: CPU del proceso llama-server.
+grafico_recursos(
+    "CPU proceso (%)",
+    "Uso promedio de CPU del proceso de inferencia",
+    "Porcentaje (%)",
+    "09_cpu_modelo.png"
+)
+
+# Grafico 10: RAM del sistema.
+grafico_recursos(
+    "RAM sistema (GiB)",
+    "Consumo promedio de RAM del sistema",
+    "Memoria (GiB)",
+    "10_ram_sistema.png"
+)
+
+# Grafico 11: RAM del modelo.
+grafico_recursos(
+    "RAM modelo (GiB)",
+    "Consumo promedio de RAM del proceso de inferencia",
+    "Memoria (GiB)",
+    "11_ram_modelo.png"
+)
+
+# Grafico 12: actividad de GPU.
+grafico_recursos(
+    "Actividad motor GPU (%)",
+    "Actividad promedio del motor GPU mas ocupado",
+    "Porcentaje (%)",
+    "12_actividad_gpu.png"
+)
+
+# Grafico 13: VRAM dedicada.
+grafico_recursos(
+    "VRAM dedicada (GiB)",
+    "Consumo promedio de VRAM dedicada",
+    "Memoria (GiB)",
+    "13_vram.png"
+)
+
+print("\nLos seis graficos de recursos se generaron correctamente.")
+print("Total del proyecto: 13 graficos.")
