@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "categoria": "individual",
+        "modelo": "ministral-3:8b",
+        "temperatura": 0.2,
+        "max_tokens": 100,
+        "prompt": "Explica brevemente que es la inteligencia artificial.",
+        "respuesta": "**Inteligencia Artificial (IA)** es una rama de la informática que busca crear sistemas capaces de realizar tareas que requieren **intelecto humano**, como aprender, razonar, resolver problemas, reconocer patrones o tomar decisiones. Estos sistemas utilizan algoritmos y modelos computacionales para procesar datos, mejorar su desempeño con la experiencia (*aprendizaje automático*) y, en algunos casos, imitar habilidades cognitivas como el lenguaje, la percepción o la cre",
+        "tokens": 100,
+        "ttft_segundos": 10.5988,
+        "tokens_por_segundo": 24.682,
+        "tiempo_total": 14.6518
+    }
+]
