@@ -1,0 +1,37 @@
+Entorno,Ejecucion,Metrica,Promedio,Maximo,Muestras
+Windows,1,CPU sistema (%),10.629999999999999,21.1,20
+Windows,1,RAM sistema (GiB),21.7424,22.009,20
+Windows,1,RAM modelo (GiB),5.48545,5.748,20
+Windows,1,CPU proceso (%),25.32,34.9,20
+Windows,1,Actividad motor GPU (%),67.17550000000001,95.52,20
+Windows,1,VRAM dedicada (GiB),8.32025,8.352,20
+Windows,2,CPU sistema (%),9.368421052631579,17.9,19
+Windows,2,RAM sistema (GiB),22.075052631578945,22.267,19
+Windows,2,RAM modelo (GiB),5.814894736842106,5.98,19
+Windows,2,CPU proceso (%),24.83157894736842,33.9,19
+Windows,2,Actividad motor GPU (%),63.568947368421064,95.44,19
+Windows,2,VRAM dedicada (GiB),8.34021052631579,8.373,19
+Windows,3,CPU sistema (%),12.042857142857144,22.3,21
+Windows,3,RAM sistema (GiB),22.373952380952378,22.861,21
+Windows,3,RAM modelo (GiB),6.067999999999998,6.204,21
+Windows,3,CPU proceso (%),23.947619047619046,34.5,21
+Windows,3,Actividad motor GPU (%),72.32285714285715,101.74,21
+Windows,3,VRAM dedicada (GiB),8.364857142857144,8.53,21
+Docker,1,CPU sistema (%),12.504000000000001,23.8,25
+Docker,1,RAM sistema (GiB),24.76,24.985,25
+Docker,1,RAM modelo (GiB),5.570119999999999,5.748,25
+Docker,1,CPU proceso (%),19.34,35.8,25
+Docker,1,Actividad motor GPU (%),55.98,95.39,25
+Docker,1,VRAM dedicada (GiB),8.40488,8.436,25
+Docker,2,CPU sistema (%),13.55625,20.5,16
+Docker,2,RAM sistema (GiB),25.0973125,25.303,16
+Docker,2,RAM modelo (GiB),5.8195625,5.975,16
+Docker,2,CPU proceso (%),29.281250000000004,34.5,16
+Docker,2,Actividad motor GPU (%),83.273125,97.86,16
+Docker,2,VRAM dedicada (GiB),8.4210625,8.438,16
+Docker,3,CPU sistema (%),16.686666666666664,28.7,15
+Docker,3,RAM sistema (GiB),24.7248,24.945,15
+Docker,3,RAM modelo (GiB),6.049733333333334,6.198,15
+Docker,3,CPU proceso (%),30.58,36.1,15
+Docker,3,Actividad motor GPU (%),88.14000000000001,95.35,15
+Docker,3,VRAM dedicada (GiB),8.511,8.591,15
