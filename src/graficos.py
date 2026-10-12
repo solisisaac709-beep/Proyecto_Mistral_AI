@@ -1,11 +1,14 @@
-
 # Proyecto Mistral AI
 # Graficos de rendimiento del modelo Ministral 3 8B
-# Se utilizan los resultados obtenidos en las 10 pruebas.
+# Utiliza los CSV y JSON ya guardados en results/.
+# Cada bloque genera figuras distintas; no vuelve a ejecutar el modelo.
 
+import json
+import statistics
 from pathlib import Path
-import pandas as pd
+
 import matplotlib.pyplot as plt
+import pandas as pd
 
 # Ubicamos la carpeta principal del proyecto.
 BASE = Path(__file__).resolve().parent.parent
@@ -97,16 +100,12 @@ crear_grafico(
     "#CA6F1E"
 )
 
-print("\nLos tres graficos se generaron correctamente.")
 
 
 # ------------------------------------------------------------
 # Comparacion de rendimiento entre Windows y Docker
 # Se utilizan tres ejecuciones completas por configuracion.
 # ------------------------------------------------------------
-
-import json
-import statistics
 
 archivos_pruebas = {
     "Windows": [
@@ -248,7 +247,6 @@ grafico_comparativo(
     "07_comparacion_tokens.png"
 )
 
-print("\nLos cuatro graficos comparativos se generaron correctamente.")
 
 
 # ------------------------------------------------------------
@@ -411,8 +409,6 @@ grafico_recursos(
     "13_vram.png"
 )
 
-print("\nLos seis graficos de recursos se generaron correctamente.")
-print("Total del proyecto: 13 graficos.")
 
 
 # ------------------------------------------------------------
@@ -512,7 +508,6 @@ grafico_temperaturas(
     "15_temperatura_tiempo.png"
 )
 
-print("\nTotal esperado: 15 graficos.")
 
 
 # ------------------------------------------------------------
@@ -625,4 +620,4 @@ fig.savefig(ruta, dpi=300, bbox_inches="tight")
 plt.close(fig)
 
 print("Grafico guardado:", ruta)
-print("\nTotal esperado del proyecto: 17 graficos.")
+print("\nListo: se generaron los 17 graficos en docs/graficos.")
